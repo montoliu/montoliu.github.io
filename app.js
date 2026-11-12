@@ -54,19 +54,36 @@ if (yearlyEntries.length) {
     }).join("")}`;
 }
 
-publicationList.innerHTML = publicationsByDate.map((publication) => `
-  <li>
-    <div class="pub-meta">
-      <span>${publication.year}</span>
-      <span class="tag ${publication.type}">${publication.type === "journal" ? "Journal" : "Conference"}</span>
-      <span class="tag quarter">${categoryLabels[publication.category]}</span>
-    </div>
-    <div>
-      <p class="authors">${highlightRaulMontoliu(publication.authors)}</p>
-      <h3>${publication.title}</h3>
-      <p class="venue">${publication.publisher}${publication.type === "conference" && publication.slug ? ` · ${publication.slug.trim()}` : ""}</p>
-      ${publication.doi ? `<a class="doi" href="${publication.doi}" target="_blank" rel="noopener noreferrer">${linkLabel(publication.doi)} ↗</a>` : ""}
-    </div>
-  </li>`).join("");
+const yearFilter = document.getElementById("year-filter");
+const typeFilter = document.getElementById("type-filter");
+const publicationCount = document.getElementById("publication-count");
+const availableYears = [...new Set(publicationsByDate.map((publication) => publication.year))].sort((firstYear, secondYear) => secondYear - firstYear);
+yearFilter.insertAdjacentHTML("beforeend", availableYears.map((year) => `<option value="${year}">${year}</option>`).join(""));
+
+const renderPublications = () => {
+  const filteredPublications = publicationsByDate.filter((publication) =>
+    (yearFilter.value === "all" || String(publication.year) === yearFilter.value) &&
+    (typeFilter.value === "all" || publication.type === typeFilter.value)
+  );
+  publicationCount.textContent = `${filteredPublications.length} publication${filteredPublications.length === 1 ? "" : "s"}`;
+  publicationList.innerHTML = filteredPublications.map((publication) => `
+    <li>
+      <div class="pub-meta">
+        <span>${publication.year}</span>
+        <span class="tag ${publication.type}">${publication.type === "journal" ? "Journal" : "Conference"}</span>
+        <span class="tag quarter">${categoryLabels[publication.category]}</span>
+      </div>
+      <div>
+        <p class="authors">${highlightRaulMontoliu(publication.authors)}</p>
+        <h3>${publication.title}</h3>
+        <p class="venue">${publication.publisher}${publication.type === "conference" && publication.slug ? ` · ${publication.slug.trim()}` : ""}</p>
+        ${publication.doi ? `<a class="doi" href="${publication.doi}" target="_blank" rel="noopener noreferrer">${linkLabel(publication.doi)} ↗</a>` : ""}
+      </div>
+    </li>`).join("");
+};
+
+yearFilter.addEventListener("change", renderPublications);
+typeFilter.addEventListener("change", renderPublications);
+renderPublications();
 
 document.getElementById("copyright-year").textContent = new Date().getFullYear();
