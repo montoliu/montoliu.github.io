@@ -1,7 +1,7 @@
 const categoryLabels = { Q1: "Q1", Q2: "Q2", Q3: "Q3", Q4: "Q4", international: "International", national: "National", unclassified: "Unclassified" };
 const normalise = (publication) => ({
   ...publication,
-  type: String(publication.type).toLowerCase().includes("journal") ? "journal" : "conference",
+  type: String(publication.type).toLowerCase().includes("book chapter") ? "book-chapter" : String(publication.type).toLowerCase().includes("journal") ? "journal" : "conference",
   category: ["Q1", "Q2", "Q3", "Q4"].includes(publication.quarter) ? publication.quarter : String(publication.quarter).toLowerCase().includes("international") ? "international" : String(publication.quarter).toLowerCase().includes("national") ? "national" : "unclassified",
 });
 
@@ -22,16 +22,16 @@ const publicationTimelineSummary = document.getElementById("publication-timeline
 const publicationsPerYear = publicationsByDate.reduce((counts, publication) => {
   if (Number.isInteger(Number(publication.year))) {
     const year = publication.year;
-    if (!counts[year]) counts[year] = { journals: 0, conferences: 0 };
-    counts[year][publication.type === "journal" ? "journals" : "conferences"] += 1;
+    if (!counts[year]) counts[year] = { journals: 0, conferences: 0, bookChapters: 0 };
+    counts[year][publication.type === "journal" ? "journals" : publication.type === "book-chapter" ? "bookChapters" : "conferences"] += 1;
   }
   return counts;
 }, {});
 const yearlyEntries = Object.entries(publicationsPerYear).sort(([firstYear], [secondYear]) => Number(firstYear) - Number(secondYear));
 
 if (yearlyEntries.length) {
-  const totalPublications = yearlyEntries.reduce((total, [, counts]) => total + counts.journals + counts.conferences, 0);
-  const maximumCount = Math.max(...yearlyEntries.map(([, counts]) => counts.journals + counts.conferences));
+  const totalPublications = yearlyEntries.reduce((total, [, counts]) => total + counts.journals + counts.conferences + counts.bookChapters, 0);
+  const maximumCount = Math.max(...yearlyEntries.map(([, counts]) => counts.journals + counts.conferences + counts.bookChapters));
   const chartWidth = Math.max(720, yearlyEntries.length * 42);
   const chartHeight = 270;
   const chartMargin = { top: 24, right: 16, bottom: 38, left: 34 };
@@ -52,12 +52,15 @@ if (yearlyEntries.length) {
     ${yearlyEntries.map(([year, counts], index) => {
       const journalHeight = (counts.journals / maximumCount) * plotHeight;
       const conferenceHeight = (counts.conferences / maximumCount) * plotHeight;
+      const bookChapterHeight = (counts.bookChapters / maximumCount) * plotHeight;
       const x = chartMargin.left + index * columnWidth + (columnWidth - barWidth) / 2;
       const journalY = chartMargin.top + plotHeight - journalHeight;
       const conferenceY = journalY - conferenceHeight;
+      const bookChapterY = conferenceY - bookChapterHeight;
       const showLabel = index % labelInterval === 0 || index === yearlyEntries.length - 1;
-      const total = counts.journals + counts.conferences;
-      return `<g><rect class="chart-bar journal" x="${x}" y="${journalY}" width="${barWidth}" height="${journalHeight}" rx="2"><title>${year}: ${counts.journals} journals, ${counts.conferences} conferences (${total} total)</title></rect><rect class="chart-bar conference" x="${x}" y="${conferenceY}" width="${barWidth}" height="${conferenceHeight}" rx="2"><title>${year}: ${counts.journals} journals, ${counts.conferences} conferences (${total} total)</title></rect>${showLabel ? `<text class="chart-axis-label" x="${x + barWidth / 2}" y="${chartHeight - 12}" text-anchor="middle">${year}</text>` : ""}</g>`;
+      const total = counts.journals + counts.conferences + counts.bookChapters;
+      const tooltip = `${year}: ${counts.journals} journals, ${counts.conferences} conferences, ${counts.bookChapters} book chapters (${total} total)`;
+      return `<g><rect class="chart-bar journal" x="${x}" y="${journalY}" width="${barWidth}" height="${journalHeight}" rx="2"><title>${tooltip}</title></rect><rect class="chart-bar conference" x="${x}" y="${conferenceY}" width="${barWidth}" height="${conferenceHeight}" rx="2"><title>${tooltip}</title></rect><rect class="chart-bar book-chapter" x="${x}" y="${bookChapterY}" width="${barWidth}" height="${bookChapterHeight}" rx="2"><title>${tooltip}</title></rect>${showLabel ? `<text class="chart-axis-label" x="${x + barWidth / 2}" y="${chartHeight - 12}" text-anchor="middle">${year}</text>` : ""}</g>`;
     }).join("")}`;
 }
 } catch (error) {
@@ -74,8 +77,10 @@ const renderPublications = () => {
     <li>
       <div class="pub-meta">
         <span>${publication.year}</span>
-        <span class="tag ${publication.type}">${publication.type === "journal" ? "Journal" : "Conference"}</span>
-        <span class="tag quarter">${categoryLabels[publication.category]}</span>
+        <span class="publication-tags">
+          <span class="tag ${publication.type}">${publication.type === "journal" ? "Journal" : publication.type === "book-chapter" ? "Book chapter" : "Conference"}</span>
+          <span class="tag quarter">${categoryLabels[publication.category]}</span>
+        </span>
       </div>
       <div>
         <p class="authors">${highlightRaulMontoliu(publication.authors)}</p>

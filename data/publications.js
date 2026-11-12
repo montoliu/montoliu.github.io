@@ -1,11 +1,11 @@
 /*
  * Single editable publication list. Add a record by copying an existing object.
- * type: Journal or Conference; quarter: Q1-Q4, International, National, or Unclassified.
+ * type: Journal, Conference, or Book chapter; quarter: Q1-Q4, International, National, or Unclassified.
  */
 window.publications = [
     {
         title: "A Sensor-Error Correction Framework for Wi-Fi RTT-Based Indoor Localization",
-        authors: "Raul Montoliu, Paolo Barsocchi, Alex Martínez-Martínez, Francesco Furfari, Gisuseppe Lombardi, Antonino Crivello, Miguel Matey-Sanz, Antoni Perez-Navarro, Joaquín Torres-Sospedra",
+        authors: "Raul Montoliu, Paolo Barsocchi, Alex Martínez-Martínez, Francesco Furfari, Gisuseppe Lombardi, Antonino Crivello, Miguel Matey-Sanz, Joaquín Torres-Sospedra",
         doi: "",
         year: 2026,
         publisher: "18th International Congress on Ultra Modern Telecommunications and Control Systems",
@@ -18,7 +18,7 @@ window.publications = [
         authors: "Alex Martínez-Martínez, Raul Montoliu, Inmaculada Remolar",
         doi: "https://doi.org/10.1007/s10489-026-07576-5",
         year: 2026,
-        publisher: "Applied Intelligence",
+        publisher: "Applied Intelligence, Vol. 50 No. 541",
         quarter: "Q2",
         type: "Journal",
         slug: "AI",
@@ -98,7 +98,7 @@ window.publications = [
         authors: "A. Batalla-Gavalda, J.V. Beltran-Garrido, R. Montoliu-Colás, A. Reina-Gómez, F. Corbi, & G. Daza-Sobrino",
         doi: "https://doi.org/10.51371/issn.1840-2976.651",
         year: 2026,
-        publisher: "Acta Kinesiologica",
+        publisher: "Acta Kinesiologica, Vol. 20 No. 2",
         quarter: "Q3",
         type: "Journal",
         slug: "AK",
@@ -118,8 +118,8 @@ window.publications = [
         authors: "Alex Martínez-Martínez, Raul Montoliu, Inmaculada Remolar",
         doi: "https://dx.doi.org/10.14569/IJACSA.2026.0170304",
         year: 2026,
-        publisher: "International Journal of Advanced Computer Science and Applications",
-        quarter: "Q3",
+        publisher: "International Journal of Advanced Computer Science and Applications, Vol. 17, No. 3",
+        quarter: "Q1",
         type: "Journal",
         slug: "IJACSA",
   },
@@ -149,7 +149,7 @@ window.publications = [
         doi: "https://doi.org/10.1038/s41597-026-06581-0",
         year: 2026,
         publisher: "Scientific Data",
-        quarter: "Q1",
+        quarter: "Q3",
         type: "Journal",
         slug: "SDATA",
   },
@@ -178,7 +178,7 @@ window.publications = [
         authors: "Abraham Batalla-Gavalda, Jose Vicente Beltran-Garrido, Raúl Montoliu-Colás, Álvaro Reina-Gómez, Francisco Corbi, Gabriel Daza-Sobrino",
         doi: "https://doi.org/10.58727/jshr.118640",
         year: 2025,
-        publisher: "Journal of Sport and Health Research",
+        publisher: "Journal of Sport and Health Research, Vol. 17 No. 2",
         quarter: "Q3",
         type: "Journal",
         slug: "JSHR",
@@ -198,7 +198,7 @@ window.publications = [
         authors: "Alex Martínez-Martínez, Águeda Gómez-Cambronero, Raul Montoliu, Inmaculada Remolar",
         doi: "https://doi.org/10.3390/bdcc9100259",
         year: 2025,
-        publisher: "Big Data and Cognitive Computing",
+        publisher: "Big Data and Cognitive Computing, Vol. 9 No. 10",
         quarter: "Q1",
         type: "Journal",
         slug: "BDCC",
@@ -492,7 +492,7 @@ window.publications = [
     doi: "https://doi.org/10.1109/JSEN.2022.3157137",
     year: 2022,
     publisher: "IEEE Sensors Journal, Vol 22 (8)",
-    quarter: "Q2",
+    quarter: "Q1",
     type: "Journal",
     slug: "IEEE Sensors",
   },
@@ -504,7 +504,7 @@ window.publications = [
     doi: "https://doi.org/10.3390/biology11111592",
     year: 2022,
     publisher: "Biology, 11(11):1592",
-    quarter: "Q1",
+    quarter: "Q2",
     type: "Journal",
     slug: "Biology",
   },
@@ -538,7 +538,7 @@ window.publications = [
       "Emilio Sansano-Sansano, Fernando J. Aranda, Raúl Montoliu, Fernando J. Álvarez",
     doi: "https://doi.org/10.3390/data5040115",
     year: 2020,
-    publisher: "Data",
+    publisher: "Data, Vol. 5 No. 4",
     quarter: "",
     type: "Journal",
     slug: "Data",
@@ -562,7 +562,7 @@ window.publications = [
       "E. Sansano-Sansano, O. Belmonte-Fernández, R. Montoliu, A. Gascó-Compte, A. Caballer-Miedes",
     doi: "https://doi.org/10.1155/2020/5204158",
     year: 2020,
-    publisher: "Mobile Information System",
+    publisher: "Mobile Information Systems, Vol. 2020",
     quarter: "Q4",
     type: "Journal",
     slug: "MIS",
@@ -573,7 +573,7 @@ window.publications = [
     doi: "https://doi.org/10.1111/coin.12318",
     year: 2020,
     publisher: "Computational Intelligence, Vol. 36, Issue 3, pp 1113-1139",
-    quarter: "Q4",
+    quarter: "Q3",
     type: "Journal",
     slug: "Computational Intelligence",
   },
@@ -583,8 +583,8 @@ window.publications = [
     authors: "R. Montoliu, E. Sansano, A. Gascó, O. Belmonte, A. Caballer",
     doi: "https://doi.org/10.3390/electronics9050728",
     year: 2020,
-    publisher: "Electronics",
-    quarter: "Q2",
+    publisher: "Electronics, Vol. 9 No. 5, 728",
+    quarter: "Q3",
     type: "Journal",
     slug: "Electronics",
   },
@@ -779,7 +779,7 @@ window.publications = [
    {
       doi: "https://doi.org/10.3390/ijgi8050212",
       slug: "",
-      quarter: "Unclassified",
+      quarter: "Q3",
       type: "Journal",
       title: "An Occupancy Simulator for a Smart Parking System: Developmental Design and Experimental Considerations",
       year: 2019,
@@ -794,7 +794,7 @@ window.publications = [
       publisher: "The R Journal (2019) 11:1, pages 67-90.",
       slug: "",
       doi: "https://doi.org/10.32614/RJ-2019-010",
-      quarter: "Unclassified"
+      quarter: "Q1"
    },
    {
       authors: "O. Belmonte, R. Montoliu, J. Torres-Sospedra, E. Sansano, D. Chia.",
@@ -802,7 +802,7 @@ window.publications = [
       publisher: "Expert Systems With Applications, vol. 105, pp 89-101. 2018.",
       type: "Journal",
       title: "A radiosity-based method to avoid calibration for Indoor Positioning Systems",
-      quarter: "Unclassified",
+      quarter: "Q1",
       slug: "",
       doi: "https://doi.org/10.1016/j.eswa.2018.03.054"
    },
@@ -824,7 +824,7 @@ window.publications = [
       publisher: "Future Generation Computer Systems. Vol 76, pp 221-233. 2017.",
       slug: "",
       doi: "http://www.sciencedirect.com/science/article/pii/S0167739X16305519",
-      quarter: "Unclassified"
+      quarter: "Q1"
    },
    {
       publisher: "Journal of Ambient Intelligence and Smart Environments, 9(5), pp 543-560, 2017.",
@@ -832,7 +832,7 @@ window.publications = [
       year: 2017,
       title: "In-home monitoring system based on WiFi fingerprints for Ambient Assisted Living",
       type: "Journal",
-      quarter: "Unclassified",
+      quarter: "Q4",
       doi: "http://content.iospress.com/articles/journal-of-ambient-intelligence-and-smart-environments/ais450",
       slug: ""
    },
@@ -842,12 +842,12 @@ window.publications = [
       year: 2017,
       title: "Assisting therapists in assessing small animal phobias by computer analysis of video-recorded sessions",
       type: "Journal",
-      quarter: "Unclassified",
+      quarter: "Q2",
       slug: "",
       doi: "http://link.springer.com/article/10.1007/s11042-016-3997-7"
    },
    {
-      quarter: "Unclassified",
+      quarter: "Q2",
       slug: "",
       doi: "http://www.mdpi.com/1424-8220/17/3/557",
       authors: "Joaquín Torres-Sospedra, Antonio R. Jiménez, Stefan Knauth, Adriano Moreira, Yair Beer, Toni Fetzer, Viet-Cuong Ta, Raul Montoliu, Fernando Seco, Germán M. Mendoza-Silva, Oscar Belmonte, Athanasios Koukofikis, Maria João Nicolau, António Costa, Filipe Meneses, Frank Ebner, Frank Deinzer, Dominique Vaufreydaz, Trung-Kien Dao and Eric Castelli",
@@ -864,7 +864,7 @@ window.publications = [
       publisher: "Journal of Ambient Intelligence and Smart Environments, vol. 9, no. 2, pp 263-279, 2017.",
       slug: "",
       doi: "http://content.iospress.com/articles/journal-of-ambient-intelligence-and-smart-environments/ais421",
-      quarter: "Unclassified"
+      quarter: "Q4"
    },
    {
       publisher: "Mobile Information Systems, Vol. 2016.",
@@ -872,7 +872,7 @@ window.publications = [
       authors: "J. Torres-Sospedra, R. Montoliu, G. Mendoza, O. Belmonte, D. Rambla and J. Huerta.",
       title: "Providing Databases for Different Indoor Positioning Technologies: Pros and Cons of Magnetic field and Wi-Fi based Positioning",
       type: "Journal",
-      quarter: "Unclassified",
+      quarter: "Q4",
       doi: "https://doi.org/10.1155/2016/6092618",
       slug: ""
    },
@@ -884,7 +884,7 @@ window.publications = [
       publisher: "El profesional de la información, vol. 25, num 2, pp 295-302, 2016.",
       slug: "",
       doi: "http://recyt.fecyt.es/index.php/EPI/article/view/epi.2016.mar.17",
-      quarter: "Unclassified"
+      quarter: "Q3"
    },
    {
       title: "Balance h&iacute;drico en jugadoras amateur de baloncesto: seguimiento en 10 partidos",
@@ -904,12 +904,12 @@ window.publications = [
       year: 2015,
       doi: "http://www.sciencedirect.com/science/article/pii/S0957417415005527",
       slug: "",
-      quarter: "Unclassified"
+      quarter: "Q1"
    },
    {
       doi: "http://www.tandfonline.com/doi/full/10.1080/13658816.2015.1049541",
       slug: "",
-      quarter: "Unclassified",
+      quarter: "Q1",
       type: "Journal",
       title: "Enhancing Integrated Indoor/Outdoor Mobility in a Smart Campus",
       authors: "J. Torres-Sospedra, Joan Avariento, David Rambla, R.Montoliu, Sven Casteleyn, Mauri Benedito-Bordonau, Michael Gould, Joaquín Huerta",
@@ -924,7 +924,7 @@ window.publications = [
       publisher: "Human Movement Science, Volume 41, pp 156-178, 2015.",
       slug: "",
       doi: "http://www.sciencedirect.com/science/article/pii/S0167945715000494",
-      quarter: "Unclassified"
+      quarter: "Q2"
    },
    {
       publisher: "Sensors, Volume 15, Issue 3. pp 5555-5582. (2015)",
@@ -932,12 +932,12 @@ window.publications = [
       year: 2015,
       title: "SEnviro: a sensorized platform proposal using open hardware and open standards",
       type: "Journal",
-      quarter: "Unclassified",
+      quarter: "Q1",
       doi: "http://www.mdpi.com/1424-8220/15/3/5555",
       slug: ""
    },
    {
-      quarter: "Unclassified",
+      quarter: "Q1",
       slug: "",
       doi: "http://www.sciencedirect.com/science/article/pii/S0925231214012600",
       authors: "R. Montoliu, R. Martín-Félez, J. Torres-Sospedra, S. Rodríguez-Pérez.",
@@ -954,7 +954,7 @@ window.publications = [
       publisher: "Multimedia Tools and Applications. Volume 62, Issue 1 (2013), Pages 179-207",
       slug: "",
       doi: "http://link.springer.com/article/10.1007%2Fs11042-011-0982-z",
-      quarter: "Unclassified"
+      quarter: "Q2"
    },
    {
       title: "Spatial Recurrences for Pedestrian Classification",
@@ -964,25 +964,25 @@ window.publications = [
       year: 2013,
       doi: "http://www.springerlink.com/content/62577p1220017503/?MUD=MP",
       slug: "",
-      quarter: "Unclassified"
+      quarter: "Q1"
    },
    {
       type: "Journal",
       title: "Sistema de seguimiento y an&aacute;lisis de la calidad del agua para consumo humano mediante el estudio de la respuesta comportamental en peces expuestos a sustacias t&oacute;xicas",
       year: 2010,
       authors: "I. Martinez-Morales, D. Verdiell-Cubedo, R. Montoliu, I.M. Hurtado-Melgar",
-      publisher: ", Anales de Bilog&iacute;a 32: 29-38. 2010.",
+      publisher: "Anales de Bilog&iacute;a 32: 29-38. 2010.",
       doi: "http://www.um.es/analesdebiologia/numeros/32/PDF/32_2010_04.pdf",
       slug: "",
       quarter: "Unclassified"
    },
    {
-      publisher: ", Computer Vision and Image Understanding, 113 (2009) 790-801.",
+      publisher: "Computer Vision and Image Understanding, 113 (2009) 790-801.",
       authors: "R. Montoliu and F. Pla",
       year: 2009,
       title: "Generalized least squares-based parametric motion estimation",
       type: "Journal",
-      quarter: "Unclassified",
+      quarter: "Q2",
       slug: "",
       doi: "http://www.sciencedirect.com/science/article/pii/S1077314209000332"
    },
@@ -993,7 +993,7 @@ window.publications = [
       year: 2018,
       authors: "R. Montoliu, E. Sansano-Sansano, J. Torres-Sospedra, O. Belmonte-Fernández.",
       publisher: "Geographical and Fingerprinting Data for Positioning and Navigation Systems. Challenges, Experiences and Technology. J. Conesa, A. Pérez-Navarro, J. Torres-Sospedra, R. Montoliu editors. 1st Edition, 2018. ISBN: 9780128131893.",
-      type: "Journal",
+      type: "Book chapter",
       title: "IndoorLoc Platform: A Web Tool to Support the Comparison of Indoor Positioning Systems"
    },
    {
@@ -1001,7 +1001,7 @@ window.publications = [
       authors: "J. Torres-Sospedra, O. Belmonte-Fernández, G.M. Mendoza-Silva, R. Montoliu, A. Puertas-Cabedo, L.E. Rodríguez-Pupo, S. Trilles, A. Calia, M. Benedito-Bordonau, J. Huerta.",
       year: 2018,
       title: "Lessons Learned in Generating Ground Truth for Indoor Positioning Systems Based on Wi-Fi Fingerprinting",
-      type: "Journal",
+      type: "Book chapter",
       quarter: "Unclassified",
       slug: "",
       doi: "https://www.elsevier.com/books/geographical-and-fingerprinting-data-for-positioning-and-navigation-systems/conesa/978-0-12-813189-3"
@@ -1010,7 +1010,7 @@ window.publications = [
       doi: "https://www.elsevier.com/books/geographical-and-fingerprinting-data-for-positioning-and-navigation-systems/conesa/978-0-12-813189-3",
       slug: "",
       quarter: "Unclassified",
-      type: "Journal",
+      type: "Book chapter",
       title: "Challenges of Fingerprinting in Indoor Positioning and Navigation",
       year: 2018,
       authors: "A. Pérez-Navarro, J. Torres-Sospedra, R. Montoliu, J. Conesa, R. Berkvens, G. Caso, Constantinos Costa, N. Dorigatti, N. Hernández, S. Knauth, E. Simona Lohan, J. Machaj, A. Moreira, P. Wilk",
@@ -1021,59 +1021,59 @@ window.publications = [
       year: 2005,
       authors: "Montoliu R., Pla F.",
       title: "Illumination intensity, object geometry and Highlights invariance in multispectral imaging",
-      type: "Journal",
-      quarter: "Unclassified",
+      type: "Conference",
+      quarter: "International",
       slug: "",
       doi: "http://www.springerlink.com/content/rcj0wd2awjdcv5uh/"
    },
    {
-      type: "Journal",
+      type: "Conference",
       title: "Robust Techniques in Least Squares-Based Motion Estimation Problems",
       year: 2003,
       authors: "Montoliu R., Pla F.",
       publisher: "Lecture Notes in Computer Computer Science 2905, Progress in Pattern Recognition, Speech and Image Analysis, A. Sanfeliu and J. Ruiz-Schulcloper (Eds), Springer-Verlag, pp 62-70, ISBN 3-540-20590-X. 2003.",
       slug: "",
       doi: "http://www.springerlink.com/content/5a6axa085g8784ne/",
-      quarter: "Unclassified"
+      quarter: "International"
    },
    {
       title: "Multiple segmentation of moving objects by quasi-simultaneous parametric motion estimation",
-      type: "Journal",
+      type: "Conference",
       publisher: "Lecture Notes in Computer Computer Science 2652, Pattern Recognition and Image Analysis, F.J. Perales et al (Eds), Springer-Verlag, pp 572-579, ISBN 3-540-40217-9. 2003.",
       year: 2003,
       authors: "Montoliu R., Pla F.",
       doi: "http://link.springer.com/chapter/10.1007%2F978-3-540-44871-6_67",
       slug: "",
-      quarter: "Unclassified"
+      quarter: "International"
    },
    {
-      quarter: "Unclassified",
+      quarter: "International",
       slug: "",
       doi: "http://link.springer.com/chapter/10.1007%2F978-3-642-38628-2_22",
       publisher: "Pattern Recognition and Image Analysis, Lecture Notes in Computer Science Volume 7887, 2013, pp 189-196",
       year: 2013,
       authors: "S. Rodriguez-Perez, R. Montoliu",
       title: "Bag-of-Words and Topic Modeling-based Sport Video Analysis",
-      type: "Journal"
+      type: "Conference"
    },
    {
       authors: "R. Fernandez-Beltran, F. Pla. R. Montoliu.",
       year: 2013,
       publisher: "Pattern Recognition and Image Analysis, Lecture Notes in Computer Science Volume 7887, 2013, pp 648-655",
-      type: "Journal",
+      type: "Conference",
       title: "Vocabulary Reduction in BoW representing by Topic Modeling",
-      quarter: "Unclassified",
+      quarter: "International",
       slug: "",
       doi: "http://link.springer.com/chapter/10.1007/978-3-642-38628-2_77"
    },
    {
-      quarter: "Unclassified",
+      quarter: "International",
       doi: "http://www.springerlink.com/content/92677p777040n54v/",
       slug: "",
       year: 2009,
       authors: "R. Montoliu, P. Latorre-Carmona and F. Pla.",
       publisher: "Lecture Notes in Computer Science 5856. Pages 61–68. Springer, 2009.",
-      type: "Journal",
+      type: "Conference",
       title: "Color Image Registration under Illumination Changes"
    },
    {
@@ -1109,7 +1109,7 @@ window.publications = [
    {
       slug: "",
       doi: "http://www.mdpi.com/1424-8220/17/1/36",
-      quarter: "Unclassified",
+      quarter: "Q2",
       title: "An Indoor Positioning System Based on Wearables for Ambient-Assisted Living",
       type: "Journal",
       publisher: "Sensors vol 17(1), 2017",
@@ -1161,7 +1161,7 @@ window.publications = [
       title: "On the Importance of the Grid Size for Gender Recognition Using Full Body Static Images",
       year: 2011,
       authors: "C. Serra-Toro, R. Montoliu, V.J. Traver, J.M. Sotoca",
-      publisher: ", VISAPP 2011.",
+      publisher: "VISAPP 2011.",
       doi: "https://doi.org/10.5220/0003323803340339",
       slug: "",
       quarter: "International"
@@ -1169,7 +1169,7 @@ window.publications = [
    {
       authors: "R. Montoliu and D. Gatica-Perez;",
       year: 2010,
-      publisher: ", 9th International Conference on Mobile and Ubiquitous Multimedia, MUM2010. December 1-3, 2010, Limassol, Cyprus. Best Paper Award. .",
+      publisher: "9th International Conference on Mobile and Ubiquitous Multimedia, MUM2010. December 1-3, 2010, Limassol, Cyprus. Best Paper Award. .",
       type: "Conference",
       title: "Discovering Human Places of Interest from Multimodal Mobile Phone Data",
       quarter: "International",
@@ -1179,7 +1179,7 @@ window.publications = [
    {
       title: "Fast Dynamic Texture Detection",
       type: "Conference",
-      publisher: ", ECCV 2010",
+      publisher: "ECCV 2010",
       authors: "V.J. Traver, Majid Mirmehdi, R. Montoliu and Xie Xianghua;",
       year: 2010,
       slug: "",
@@ -1189,17 +1189,17 @@ window.publications = [
    {
       title: "Assessing Water Quality by Video Monitoring Fish Swimming Behaviour",
       type: "Conference",
-      publisher: ", ICPR 2010",
+      publisher: "ICPR 2010",
       year: 2010,
       authors: "C. Serra-Toro, R. Montoliu, V.J. Traver, Isabel M. Hurtado-Melgar M. Nu&ntilde;ez-Red&oacute and Pablo Cascales;",
       doi: "http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5597823",
       slug: "",
-      quarter: "National"
+      quarter: "International"
    },
    {
       year: 2010,
       authors: "Pau Agust&iacute;, V. Javier Traver, Raul Montoliu and Filiberto Pla",
-      publisher: ", Workshop AERFAI, CEDI 2010",
+      publisher: "Workshop AERFAI, CEDI 2010",
       type: "Conference",
       title: "An evaluation of the grid geometry for human action recognition",
       quarter: "National",
@@ -1209,9 +1209,9 @@ window.publications = [
    {
       slug: "",
       doi: "",
-      quarter: "Unclassified",
+      quarter: "International",
       title: "Quasi-Simultaneous Motion Segmentation and Estimation Using an Iterative Region Growing Algorithm",
-      type: "Journal",
+      type: "Conference",
       publisher: "Frontiers in Artificial Intelligence and Applications vol. 100, Artificial Intelligence Research and Development. Isabel Aguiló et al (Eds) IOS Press, pp 189-198. ISBN 1-58603-378-6. 2003.",
       year: 2003,
       authors: "Montoliu R, Pla F."
@@ -1250,7 +1250,7 @@ window.publications = [
       publisher: "12th Portuguese Conference on Pattern Recognition. Aveiro, Portugal, June 27th- 28th, 2002. ISBN 972-789-067-9.",
       year: 2002,
       authors: "Montoliu R, Pla F.",
-      title: "Quasi-simultaneous Motion Segmentation and Estimation Using a Generalizad Least-Squares Methos",
+      title: "Quasi-simultaneous Motion Segmentation and Estimation Using a Generalizad Least-Squares Methods",
       type: "Conference",
       quarter: "National",
       doi: "",

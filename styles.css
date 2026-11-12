@@ -48,6 +48,7 @@ nav a:hover { color: var(--blue); }
 .chart-swatch { width: 10px; height: 10px; border-radius: 1px; }
 .chart-swatch.journal, .chart-bar.journal { fill: #236b91; background: #236b91; }
 .chart-swatch.conference, .chart-bar.conference { fill: #c36a45; background: #c36a45; }
+.chart-swatch.book-chapter, .chart-bar.book-chapter { fill: #8b6ea8; background: #8b6ea8; }
 .chart-scroll { overflow-x: auto; }
 #publication-timeline-chart { display: block; width: 100%; min-width: 720px; height: auto; }
 .chart-grid { stroke: var(--line); stroke-width: 1; }
@@ -66,9 +67,11 @@ h2 { margin: 0; font: 600 clamp(2rem, 4vw, 3.55rem)/1.05 var(--serif); letter-sp
 .publication-list li { display: grid; grid-template-columns: 150px 1fr; gap: 22px; padding: 27px 0; border-bottom: 1px solid var(--line); }
 .pub-meta { display: flex; flex-wrap: wrap; align-content: start; gap: 6px; }
 .pub-meta > span:first-child { width: 100%; margin-bottom: 7px; color: var(--navy); font: 500 18px var(--serif); }
+.publication-tags { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; }
 .tag { padding: 2px 6px; border-radius: 2px; font: 9px var(--mono); text-transform: uppercase; }
 .tag.journal { background: #dcecef; color: #174660; }
 .tag.conference { background: #f9e4d9; color: #813b21; }
+.tag.book-chapter { background: #ebe2f3; color: #553a70; }
 .tag.quarter { background: #ecece7; color: #545950; }
 .authors, .venue { margin: 0; color: var(--muted); font-size: 15px; }
 .authors u { text-decoration-thickness: 1.5px; text-underline-offset: 3px; }
