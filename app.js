@@ -10,12 +10,19 @@ const highlightRaulMontoliu = (authors) => authors.replace(/(?:ra[uú]l\s+montol
 const publicationsByDate = window.publications.map(normalise).sort((a, b) => b.year - a.year || a.title.localeCompare(b.title));
 const linkLabel = (url) => url.replace(/^https?:\/\/(dx\.)?doi\.org\//, "");
 
+const yearFilter = document.getElementById("year-filter");
+const typeFilter = document.getElementById("type-filter");
+const publicationCount = document.getElementById("publication-count");
+const availableYears = [...new Set(publicationsByDate.map((publication) => publication.year))].sort((firstYear, secondYear) => secondYear - firstYear);
+yearFilter.insertAdjacentHTML("beforeend", availableYears.map((year) => `<option value="${year}">${year}</option>`).join(""));
+
+try {
 const publicationTimeline = document.getElementById("publication-timeline-chart");
 const publicationTimelineSummary = document.getElementById("publication-timeline-summary");
 const publicationsPerYear = publicationsByDate.reduce((counts, publication) => {
   if (Number.isInteger(Number(publication.year))) {
     const year = publication.year;
-    counts[year] ||= { journals: 0, conferences: 0 };
+    if (!counts[year]) counts[year] = { journals: 0, conferences: 0 };
     counts[year][publication.type === "journal" ? "journals" : "conferences"] += 1;
   }
   return counts;
@@ -53,12 +60,9 @@ if (yearlyEntries.length) {
       return `<g><rect class="chart-bar journal" x="${x}" y="${journalY}" width="${barWidth}" height="${journalHeight}" rx="2"><title>${year}: ${counts.journals} journals, ${counts.conferences} conferences (${total} total)</title></rect><rect class="chart-bar conference" x="${x}" y="${conferenceY}" width="${barWidth}" height="${conferenceHeight}" rx="2"><title>${year}: ${counts.journals} journals, ${counts.conferences} conferences (${total} total)</title></rect>${showLabel ? `<text class="chart-axis-label" x="${x + barWidth / 2}" y="${chartHeight - 12}" text-anchor="middle">${year}</text>` : ""}</g>`;
     }).join("")}`;
 }
-
-const yearFilter = document.getElementById("year-filter");
-const typeFilter = document.getElementById("type-filter");
-const publicationCount = document.getElementById("publication-count");
-const availableYears = [...new Set(publicationsByDate.map((publication) => publication.year))].sort((firstYear, secondYear) => secondYear - firstYear);
-yearFilter.insertAdjacentHTML("beforeend", availableYears.map((year) => `<option value="${year}">${year}</option>`).join(""));
+} catch (error) {
+  console.error("Unable to render the publications timeline.", error);
+}
 
 const renderPublications = () => {
   const filteredPublications = publicationsByDate.filter((publication) =>
