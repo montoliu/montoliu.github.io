@@ -1,0 +1,9 @@
+{
+  "name": "raul-montoliu-web",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node --check app.js && node --check data/publications.js",
+    "serve": "npx serve ."
+  }
+}

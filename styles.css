@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Manrope:wght@400;500;600;700&display=swap');
+
+:root {
+  --ink: #12202c;
+  --navy: #123a5a;
+  --blue: #236b91;
+  --paper: #fbfaf7;
+  --line: #d9e0df;
+  --muted: #607079;
+  --serif: Fraunces, Georgia, serif;
+  --sans: Manrope, Arial, sans-serif;
+  --mono: "DM Mono", monospace;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.6 var(--sans); }
+a { color: inherit; }
+
+.skip-link { position: absolute; left: -999px; }
+.skip-link:focus { left: 1rem; top: 1rem; z-index: 10; padding: .5rem; background: white; }
+
+.site-header { position: sticky; top: 0; z-index: 5; background: #fbfaf7ed; border-bottom: 1px solid var(--line); backdrop-filter: blur(12px); }
+.nav-wrap { display: flex; justify-content: flex-end; align-items: center; max-width: 1200px; height: 72px; margin: auto; padding: 0 32px; }
+nav { display: flex; gap: 25px; }
+nav a { font-size: 13px; font-weight: 700; text-decoration: none; }
+nav a:hover { color: var(--blue); }
+
+.hero { display: grid; grid-template-columns: .62fr 1.38fr; gap: 58px; align-items: center; max-width: 1200px; margin: auto; padding: 28px 32px 44px; }
+.portrait { margin: 0; text-align: center; }
+.portrait img { display: block; width: 100%; max-height: 310px; margin: auto; object-fit: contain; }
+.hero-copy { padding: 8px 0; }
+.hero h1 { width: min(700px, 100%); margin: 0; color: var(--navy); font: 600 1.4rem/1.2 var(--serif); letter-spacing: 0; word-spacing: .12em; text-align: center; }
+.lead { max-width: 700px; margin: 18px 0 25px; color: #3f4c52; font-size: 17px; text-align: justify; text-justify: inter-word; }
+.lead a { color: var(--blue); font-weight: 700; text-decoration-thickness: 1px; text-underline-offset: 2px; }
+
+.profile-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); width: min(700px, 100%); margin: 0; border: 1px solid var(--line); background: var(--line); gap: 1px; }
+.profile-links a { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 10px 12px; background: var(--paper); color: var(--navy); font-size: 12px; font-weight: 700; text-decoration: none; }
+.profile-links a:hover { background: #eaf1f3; }
+.profile-links span { color: var(--blue); }
+
+.publications { max-width: 1200px; margin: auto; padding: 45px 32px 100px; }
+.section-heading { margin-bottom: 28px; }
+h2 { margin: 0; font: 600 clamp(2rem, 4vw, 3.55rem)/1.05 var(--serif); letter-spacing: -.04em; }
+.publication-list { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
+.publication-list li { display: grid; grid-template-columns: 150px 1fr; gap: 22px; padding: 27px 0; border-bottom: 1px solid var(--line); }
+.pub-meta { display: flex; flex-wrap: wrap; align-content: start; gap: 6px; }
+.pub-meta > span:first-child { width: 100%; margin-bottom: 7px; color: var(--navy); font: 500 18px var(--serif); }
+.tag { padding: 2px 6px; border-radius: 2px; font: 9px var(--mono); text-transform: uppercase; }
+.tag.journal { background: #dcecef; color: #174660; }
+.tag.conference { background: #f9e4d9; color: #813b21; }
+.tag.quarter { background: #ecece7; color: #545950; }
+.authors, .venue { margin: 0; color: var(--muted); font-size: 15px; }
+.authors u { text-decoration-thickness: 1.5px; text-underline-offset: 3px; }
+.publication-list h3 { margin: 4px 0 5px; font: 500 19px/1.3 var(--serif); letter-spacing: -.025em; }
+.doi { display: inline-block; margin-top: 7px; color: var(--blue); font-size: 12px; font-weight: 700; }
+
+footer { display: grid; gap: 25px; padding: 45px max(32px, calc((100% - 1200px) / 2 + 32px)) 25px; background: #102a40; color: white; }
+.email { margin: 0; color: #c5e8ed; font: 500 clamp(1.5rem, 3vw, 2.5rem) var(--serif); }
+.copyright { margin: 0; padding-top: 15px; border-top: 1px solid #ffffff30; color: #92a4af; font-size: 11px; }
+
+@media (max-width: 800px) {
+  .hero { grid-template-columns: 1fr; gap: 28px; padding-top: 32px; }
+  .portrait img { max-width: 310px; }
+  .hero-copy { padding: 0; }
+  .publication-list li { grid-template-columns: 1fr; gap: 9px; }
+  .pub-meta { align-items: center; }
+  .pub-meta > span:first-child { width: auto; margin: 0; }
+}
+
+@media (max-width: 480px) {
+  .nav-wrap { height: 62px; padding: 0 18px; }
+  nav { gap: 12px; }
+  nav a { font-size: 11px; }
+  .hero, .publications { padding-right: 18px; padding-left: 18px; }
+  .lead { text-align: left; }
+  .profile-links { grid-template-columns: 1fr; }
+  footer { padding-right: 18px; padding-left: 18px; }
+}
