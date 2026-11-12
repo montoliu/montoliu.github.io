@@ -1082,14 +1082,14 @@ window.publications = [
       year: 2019,
       title: "Improving positioning accuracy in Ambient Assisted Living environments. A multi-sensor approach",
       type: "Conference",
-      quarter: "Unclassified",
+      quarter: "International",
       slug: "",
       doi: "https://doi.org/10.1109/IE.2019.00004"
    },
    {
       doi: "http://ipin2018.ifsttar.fr/",
       slug: "",
-      quarter: "Unclassified",
+      quarter: "International",
       type: "Conference",
       title: "A new methodology for long-term maintenance of WiFi fingerprinting radio maps",
       authors: "R. Montoliu, E. Sansano, O. Belmonte, J. Torres-Sospedra.",
@@ -1097,7 +1097,7 @@ window.publications = [
       publisher: "9th International Conference on Indoor Positioning and Indoor Navigation ."
    },
    {
-      quarter: "Unclassified",
+      quarter: "International",
       slug: "",
       doi: "http://ipin2018.ifsttar.fr/",
       year: 2018,
@@ -1111,7 +1111,7 @@ window.publications = [
       doi: "http://www.mdpi.com/1424-8220/17/1/36",
       quarter: "Unclassified",
       title: "An Indoor Positioning System Based on Wearables for Ambient-Assisted Living",
-      type: "Conference",
+      type: "Journal",
       publisher: "Sensors vol 17(1), 2017",
       authors: "O. Belmonte, A. Puertas-Cabedo, J. Torres-Sospedra, R. Montoliu, S. Trilles-Oliver",
       year: 2017
@@ -1122,12 +1122,12 @@ window.publications = [
       publisher: "Progress in Location-Based Services 2016, Lecture Notes in Geoinformation and Cartography.",
       type: "Conference",
       title: "Situation Goodness Method for Weighted Centroid-Based Wi-Fi APs Localization",
-      quarter: "Unclassified",
+      quarter: "International",
       doi: "https://doi.org/10.1007/978-3-319-47289-8_2",
       slug: ""
    },
    {
-      quarter: "Unclassified",
+      quarter: "International",
       slug: "",
       doi: "https://doi.org/10.5220/0004216906140619",
       year: 2013,
@@ -1137,7 +1137,7 @@ window.publications = [
       title: "Bag-of-words for action recognition using random projections: An exploratory study"
    },
    {
-      quarter: "Unclassified",
+      quarter: "International",
       slug: "",
       doi: "http://www.idiap.ch/project/mdc/publications/files/mdc-final147-montoliu.pdf",
       year: 2012,
@@ -1154,7 +1154,7 @@ window.publications = [
       publisher: "Ambient Intelligence-Software and Applications, pp 145-153, Springer 2012.",
       doi: "http://www.springerlink.com/content/6q5581042rk700w3/",
       slug: "",
-      quarter: "Unclassified"
+      quarter: "International"
    },
    {
       type: "Conference",
@@ -1164,7 +1164,7 @@ window.publications = [
       publisher: ", VISAPP 2011.",
       doi: "https://doi.org/10.5220/0003323803340339",
       slug: "",
-      quarter: "Unclassified"
+      quarter: "International"
    },
    {
       authors: "R. Montoliu and D. Gatica-Perez;",
@@ -1172,7 +1172,7 @@ window.publications = [
       publisher: ", 9th International Conference on Mobile and Ubiquitous Multimedia, MUM2010. December 1-3, 2010, Limassol, Cyprus. Best Paper Award. .",
       type: "Conference",
       title: "Discovering Human Places of Interest from Multimodal Mobile Phone Data",
-      quarter: "Unclassified",
+      quarter: "International",
       slug: "",
       doi: "http://www.idiap.ch/~gatica/publications/MontoliuGatica-mum10.pdf"
    },
@@ -1184,7 +1184,7 @@ window.publications = [
       year: 2010,
       slug: "",
       doi: "http://dx.doi.org/10.1007/978-3-642-15561-1_49",
-      quarter: "Unclassified"
+      quarter: "International"
    },
    {
       title: "Assessing Water Quality by Video Monitoring Fish Swimming Behaviour",
@@ -1194,7 +1194,7 @@ window.publications = [
       authors: "C. Serra-Toro, R. Montoliu, V.J. Traver, Isabel M. Hurtado-Melgar M. Nu&ntilde;ez-Red&oacute and Pablo Cascales;",
       doi: "http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5597823",
       slug: "",
-      quarter: "Unclassified"
+      quarter: "National"
    },
    {
       year: 2010,
@@ -1202,7 +1202,7 @@ window.publications = [
       publisher: ", Workshop AERFAI, CEDI 2010",
       type: "Conference",
       title: "An evaluation of the grid geometry for human action recognition",
-      quarter: "Unclassified",
+      quarter: "National",
       doi: "http://marmota.dlsi.uji.es/WebBIB//papers/2010/CEDI_pagusti.pdf",
       slug: ""
    },
@@ -1211,7 +1211,7 @@ window.publications = [
       doi: "",
       quarter: "Unclassified",
       title: "Quasi-Simultaneous Motion Segmentation and Estimation Using an Iterative Region Growing Algorithm",
-      type: "Conference",
+      type: "Journal",
       publisher: "Frontiers in Artificial Intelligence and Applications vol. 100, Artificial Intelligence Research and Development. Isabel Aguiló et al (Eds) IOS Press, pp 189-198. ISBN 1-58603-378-6. 2003.",
       year: 2003,
       authors: "Montoliu R, Pla F."
@@ -1219,7 +1219,7 @@ window.publications = [
    {
       doi: "",
       slug: "",
-      quarter: "Unclassified",
+      quarter: "International",
       type: "Conference",
       title: "Comparing Brightness Constancy Assumption and Optic Flow Equation in Motion Estimation Algorithms",
       authors: "Montoliu R., Pla F.",
@@ -1232,7 +1232,7 @@ window.publications = [
       authors: "Montoliu R., Pla F.",
       title: "Motion Segmentation by quasi-simultaneous multi-parametric Estimation",
       type: "Conference",
-      quarter: "Unclassified",
+      quarter: "International",
       slug: "",
       doi: ""
    },
@@ -1242,7 +1242,7 @@ window.publications = [
       year: 2002,
       title: "Log-Polar Mapping in Generalized Least-Squares Motion Estimation",
       type: "Conference",
-      quarter: "Unclassified",
+      quarter: "International",
       doi: "",
       slug: ""
    },
@@ -1252,12 +1252,12 @@ window.publications = [
       authors: "Montoliu R, Pla F.",
       title: "Quasi-simultaneous Motion Segmentation and Estimation Using a Generalizad Least-Squares Methos",
       type: "Conference",
-      quarter: "Unclassified",
+      quarter: "National",
       doi: "",
       slug: ""
    },
    {
-      quarter: "Unclassified",
+      quarter: "International",
       doi: "http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=958648&filter%3DAND%28p_IS_Number%3A20718%29%26rowsPerPage%3D100",
       slug: "",
       year: 2001,
@@ -1269,7 +1269,7 @@ window.publications = [
    {
       slug: "",
       doi: "",
-      quarter: "Unclassified",
+      quarter: "National",
       type: "Conference",
       title: "Parametric motion model extraction and estimation",
       authors: "Montoliu R, Pla F.",
@@ -1279,7 +1279,7 @@ window.publications = [
    {
       slug: "",
       doi: "",
-      quarter: "Unclassified",
+      quarter: "National",
       title: "A comparative study of Dimensionality reduction Methods for Image Classification",
       type: "Conference",
       publisher: "9th. Spanish Symposium on Pattern Recognition and Image Analysis, vol. 2, pp. 325-330, Castelló (Spain), ISBN 84-8021-351-5, 2001. Pre prints",
